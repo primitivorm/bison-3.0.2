@@ -1,14 +1,11 @@
-lib/get-errno.o: lib/get-errno.c /usr/include/stdc-predef.h lib/config.h \
- lib/get-errno.h /usr/include/errno.h /usr/include/features.h \
- /usr/include/x86_64-linux-gnu/sys/cdefs.h \
- /usr/include/x86_64-linux-gnu/bits/wordsize.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
- /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
- /usr/include/x86_64-linux-gnu/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h
-
-/usr/include/stdc-predef.h:
+lib/get-errno.o: lib/get-errno.c lib/config.h lib/get-errno.h \
+ /usr/include/errno.h /usr/include/sys/errno.h /usr/include/sys/reent.h \
+ /usr/include/_ansi.h /usr/include/newlib.h /usr/include/sys/config.h \
+ /usr/include/machine/ieeefp.h /usr/include/sys/features.h \
+ /usr/include/cygwin/config.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/stddef.h \
+ /usr/include/sys/_types.h /usr/include/machine/_types.h \
+ /usr/include/machine/_default_types.h /usr/include/sys/lock.h
 
 lib/config.h:
 
@@ -16,22 +13,28 @@ lib/get-errno.h:
 
 /usr/include/errno.h:
 
-/usr/include/features.h:
+/usr/include/sys/errno.h:
 
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+/usr/include/sys/reent.h:
 
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+/usr/include/_ansi.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+/usr/include/newlib.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+/usr/include/sys/config.h:
 
-/usr/include/x86_64-linux-gnu/bits/errno.h:
+/usr/include/machine/ieeefp.h:
 
-/usr/include/linux/errno.h:
+/usr/include/sys/features.h:
 
-/usr/include/x86_64-linux-gnu/asm/errno.h:
+/usr/include/cygwin/config.h:
 
-/usr/include/asm-generic/errno.h:
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/stddef.h:
 
-/usr/include/asm-generic/errno-base.h:
+/usr/include/sys/_types.h:
+
+/usr/include/machine/_types.h:
+
+/usr/include/machine/_default_types.h:
+
+/usr/include/sys/lock.h:

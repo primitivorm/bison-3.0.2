@@ -108,13 +108,13 @@ fi
 ## ------- ##
 
 # Empty if no javac was found
-CONF_JAVAC='javac -target 1.4 -source 1.3'
+CONF_JAVAC=''
 
 # Empty if no Java VM was found
 CONF_JAVA='java'
 
 # We need egrep and perl.
-: ${EGREP='/bin/grep -E'}
+: ${EGREP='/usr/bin/grep -E'}
 : ${PERL='/usr/bin/perl'}
 
 # Use simple quotes (lib/quote.c).
@@ -128,7 +128,7 @@ LDFLAGS=''
 LIBS="$abs_top_builddir/lib/libbison.a  "
 
 # Empty if no xsltproc was found
-: ${XSLTPROC='/usr/bin/xsltproc'}
+: ${XSLTPROC=''}
 
 # Don't just check if $POSIXLY_CORRECT is set, as Bash, when launched
 # as /bin/sh, sets the shell variable POSIXLY_CORRECT to y, but not

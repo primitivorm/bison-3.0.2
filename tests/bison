@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /bin/sh
 # tests/bison.  Generated from bison.in by configure.
 # Wrapper around a non installed bison to make it work as an installed one.
 
@@ -17,8 +17,8 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-abs_top_srcdir='/home/primi/src/bison-3.0.2'
-abs_top_builddir='/home/primi/src/bison-3.0.2'
+abs_top_srcdir='/cygdrive/c/src/bison-3.0.2'
+abs_top_builddir='/cygdrive/c/src/bison-3.0.2'
 : ${PERL='/usr/bin/perl'}
 
 # Use the shipped files, not those installed.

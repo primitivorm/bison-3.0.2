@@ -36,7 +36,7 @@
 #define FLEX_SCANNER
 #define YY_FLEX_MAJOR_VERSION 2
 #define YY_FLEX_MINOR_VERSION 5
-#define YY_FLEX_SUBMINOR_VERSION 37
+#define YY_FLEX_SUBMINOR_VERSION 39
 #if YY_FLEX_SUBMINOR_VERSION > 0
 #define FLEX_BETA
 #endif
@@ -235,6 +235,7 @@ extern FILE *code_in, *code_out;
 #define EOB_ACT_LAST_MATCH 2
 
     #define YY_LESS_LINENO(n)
+    #define YY_LINENO_REWIND_TO(ptr)
     
 /* Return all but the first "n" matched characters back to the input stream. */
 #define yyless(n) \
@@ -443,6 +444,8 @@ int code_lineno = 1;
 extern char *code_text;
 #define yytext_ptr code_text
 
+/* %% [1.5] DFA */
+
 /* %if-c-only Standard (non-C++) definition */
 
 static yy_state_type yy_get_previous_state (void );
@@ -627,7 +630,7 @@ static yyconst flex_int16_t yy_rule_linenum[18] =
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *code_text;
-#line 1 "../../src/scan-code.l"
+#line 1 "src/scan-code.l"
 /* Bison Action Scanner                             -*- C -*-
 
    Copyright (C) 2006-2013 Free Software Foundation, Inc.
@@ -647,7 +650,7 @@ char *code_text;
    You should have received a copy of the GNU General Public License
    along with this program.  If not, see <http://www.gnu.org/licenses/>.  */
 #define YY_NO_INPUT 1
-#line 24 "../../src/scan-code.l"
+#line 24 "src/scan-code.l"
 /* Work around a bug in flex 2.5.31.  See Debian bug 333231
    <http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=333231>.  */
 #undef code_wrap
@@ -709,7 +712,7 @@ of $ and @.  */
 /* C style identifier. Must start with letter. Will be used for
    named symbol references. Shall be kept synchronized with
    scan-gram.l "letter" and "id". */
-#line 713 "src/scan-code.c"
+#line 716 "src/scan-code.c"
 
 #define INITIAL 0
 #define SC_COMMENT 1
@@ -954,26 +957,6 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
     
-/* %% [7.0] user's declarations go here */
-#line 96 "../../src/scan-code.l"
-
-
-
-  /* This scanner is special: it is invoked only once, henceforth
-     is expected to return only once.  This initialization is
-     therefore done once per action to translate. */
-  aver (sc_context == SC_SYMBOL_ACTION
-        || sc_context == SC_RULE_ACTION
-        || sc_context == INITIAL);
-  BEGIN sc_context;
-
-
-  /*------------------------------------------------------------.
-  | Scanning a C comment.  The initial '/ *' is already eaten.  |
-  `------------------------------------------------------------*/
-
-#line 976 "src/scan-code.c"
-
 	if ( !(yy_init) )
 		{
 		(yy_init) = 1;
@@ -1008,6 +991,27 @@ YY_DECL
 		code__load_buffer_state( );
 		}
 
+	{
+/* %% [7.0] user's declarations go here */
+#line 96 "src/scan-code.l"
+
+
+
+  /* This scanner is special: it is invoked only once, henceforth
+     is expected to return only once.  This initialization is
+     therefore done once per action to translate. */
+  aver (sc_context == SC_SYMBOL_ACTION
+        || sc_context == SC_RULE_ACTION
+        || sc_context == INITIAL);
+  BEGIN sc_context;
+
+
+  /*------------------------------------------------------------.
+  | Scanning a C comment.  The initial '/ *' is already eaten.  |
+  `------------------------------------------------------------*/
+
+#line 1014 "src/scan-code.c"
+
 	while ( 1 )		/* loops until end-of-file is reached */
 		{
 /* %% [8.0] yymore()-related code goes here */
@@ -1026,7 +1030,7 @@ YY_DECL
 yy_match:
 		do
 			{
-			register YY_CHAR yy_c = yy_ec[YY_SC_TO_UI(*yy_cp)];
+			register YY_CHAR yy_c = yy_ec[YY_SC_TO_UI(*yy_cp)] ;
 			if ( yy_accept[yy_current_state] )
 				{
 				(yy_last_accepting_state) = yy_current_state;
@@ -1085,7 +1089,7 @@ do_action:	/* This label is used only to access EOF actions. */
 case 1:
 /* rule 1 can match eol */
 YY_RULE_SETUP
-#line 114 "../../src/scan-code.l"
+#line 114 "src/scan-code.l"
 STRING_GROW; BEGIN sc_context;
 	YY_BREAK
 
@@ -1097,13 +1101,13 @@ STRING_GROW; BEGIN sc_context;
 case 2:
 /* rule 2 can match eol */
 YY_RULE_SETUP
-#line 124 "../../src/scan-code.l"
+#line 124 "src/scan-code.l"
 STRING_GROW; BEGIN sc_context;
 	YY_BREAK
 case 3:
 /* rule 3 can match eol */
 YY_RULE_SETUP
-#line 125 "../../src/scan-code.l"
+#line 125 "src/scan-code.l"
 STRING_GROW;
 	YY_BREAK
 
@@ -1115,7 +1119,7 @@ STRING_GROW;
 case 4:
 /* rule 4 can match eol */
 YY_RULE_SETUP
-#line 135 "../../src/scan-code.l"
+#line 135 "src/scan-code.l"
 STRING_GROW;
 	YY_BREAK
 
@@ -1123,7 +1127,7 @@ STRING_GROW;
 
 case 5:
 YY_RULE_SETUP
-#line 140 "../../src/scan-code.l"
+#line 140 "src/scan-code.l"
 STRING_GROW; BEGIN sc_context;
 	YY_BREAK
 
@@ -1131,7 +1135,7 @@ STRING_GROW; BEGIN sc_context;
 
 case 6:
 YY_RULE_SETUP
-#line 145 "../../src/scan-code.l"
+#line 145 "src/scan-code.l"
 STRING_GROW; BEGIN sc_context;
 	YY_BREAK
 
@@ -1139,29 +1143,29 @@ STRING_GROW; BEGIN sc_context;
 
 case 7:
 YY_RULE_SETUP
-#line 151 "../../src/scan-code.l"
+#line 151 "src/scan-code.l"
 STRING_GROW; BEGIN SC_CHARACTER;
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 152 "../../src/scan-code.l"
+#line 152 "src/scan-code.l"
 STRING_GROW; BEGIN SC_STRING;
 	YY_BREAK
 case 9:
 /* rule 9 can match eol */
 YY_RULE_SETUP
-#line 153 "../../src/scan-code.l"
+#line 153 "src/scan-code.l"
 STRING_GROW; BEGIN SC_COMMENT;
 	YY_BREAK
 case 10:
 /* rule 10 can match eol */
 YY_RULE_SETUP
-#line 154 "../../src/scan-code.l"
+#line 154 "src/scan-code.l"
 STRING_GROW; BEGIN SC_LINE_COMMENT;
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 156 "../../src/scan-code.l"
+#line 156 "src/scan-code.l"
 {
     complain (loc, Wother, _("stray '%s'"), code_text);
     obstack_escape (&obstack_for_string, code_text);
@@ -1172,7 +1176,7 @@ YY_RULE_SETUP
 
 case 12:
 YY_RULE_SETUP
-#line 164 "../../src/scan-code.l"
+#line 164 "src/scan-code.l"
 {
     ref_tail_fields = NULL;
     handle_action_dollar (self->rule, code_text, *loc);
@@ -1182,7 +1186,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 170 "../../src/scan-code.l"
+#line 170 "src/scan-code.l"
 {
     ref_tail_fields = NULL;
     handle_action_at (self->rule, code_text, *loc);
@@ -1195,7 +1199,7 @@ YY_RULE_SETUP
 
 case 14:
 YY_RULE_SETUP
-#line 180 "../../src/scan-code.l"
+#line 180 "src/scan-code.l"
 {
     const char *type_name = NULL;
     fetch_type_name (code_text + 1, &type_name, *loc)[-1] = 0;
@@ -1207,7 +1211,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 188 "../../src/scan-code.l"
+#line 188 "src/scan-code.l"
 {
     obstack_sgrow (&obstack_for_string, "]b4_at_dollar[");
     muscle_percent_define_ensure("locations", the_location, true);
@@ -1219,14 +1223,14 @@ YY_RULE_SETUP
 /* Escape M4 quoting characters in C code.  */
 case 16:
 YY_RULE_SETUP
-#line 198 "../../src/scan-code.l"
+#line 198 "src/scan-code.l"
 obstack_escape (&obstack_for_string, code_text);
 	YY_BREAK
 /* By default, grow the string obstack with the input.  */
 case 17:
 /* rule 17 can match eol */
 YY_RULE_SETUP
-#line 201 "../../src/scan-code.l"
+#line 201 "src/scan-code.l"
 STRING_GROW;
 	YY_BREAK
 /* End of processing. */
@@ -1237,16 +1241,16 @@ case YY_STATE_EOF(SC_STRING):
 case YY_STATE_EOF(SC_CHARACTER):
 case YY_STATE_EOF(SC_RULE_ACTION):
 case YY_STATE_EOF(SC_SYMBOL_ACTION):
-#line 204 "../../src/scan-code.l"
+#line 204 "src/scan-code.l"
 STRING_FINISH; return last_string;
 	YY_BREAK
 
 case 18:
 YY_RULE_SETUP
-#line 207 "../../src/scan-code.l"
+#line 207 "src/scan-code.l"
 YY_FATAL_ERROR( "flex scanner jammed" );
 	YY_BREAK
-#line 1250 "src/scan-code.c"
+#line 1254 "src/scan-code.c"
 
 	case YY_END_OF_BUFFER:
 		{
@@ -1377,6 +1381,7 @@ YY_FATAL_ERROR( "flex scanner jammed" );
 			"fatal flex scanner internal error--no action found" );
 	} /* end of action switch */
 		} /* end of scanning one token */
+	} /* end of user's declarations */
 } /* end of code_lex */
 /* %ok-for-header */
 
@@ -2066,7 +2071,7 @@ YY_BUFFER_STATE code__scan_bytes  (yyconst char * yybytes, yy_size_t  _yybytes_l
 	YY_BUFFER_STATE b;
 	char *buf;
 	yy_size_t n;
-	int i;
+	yy_size_t i;
     
 	/* Get memory for full buffer, including space for trailing EOB's. */
 	n = _yybytes_len + 2;
@@ -2326,7 +2331,7 @@ void code_free (void * ptr )
 
 /* %ok-for-header */
 
-#line 207 "../../src/scan-code.l"
+#line 207 "src/scan-code.l"
 
 
 

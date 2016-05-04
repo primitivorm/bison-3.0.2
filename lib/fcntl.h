@@ -395,7 +395,7 @@ _GL_WARN_EXTERN_C int _gl_warn_on_use
 /* Declare overridden functions.  */
 
 #if 1
-# if 1
+# if 0
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   undef fcntl
 #   define fcntl rpl_fcntl

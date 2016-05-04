@@ -1307,7 +1307,7 @@ _GL_WARN_ON_USE (frexp, "frexp is unportable - "
      If x is zero: mantissa = x, exp = 0.
      If x is infinite or NaN: mantissa = x, exp unspecified.
    Store exp in *EXPPTR and return mantissa.  */
-#if 1 && 0
+#if 1 && 1
 # if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #  undef frexpl
 #  define frexpl rpl_frexpl
@@ -1316,7 +1316,7 @@ _GL_FUNCDECL_RPL (frexpl, long double,
                   (long double x, int *expptr) _GL_ARG_NONNULL ((2)));
 _GL_CXXALIAS_RPL (frexpl, long double, (long double x, int *expptr));
 #else
-# if !1
+# if !0
 _GL_FUNCDECL_SYS (frexpl, long double,
                   (long double x, int *expptr) _GL_ARG_NONNULL ((2)));
 # endif
@@ -1324,7 +1324,7 @@ _GL_FUNCDECL_SYS (frexpl, long double,
 _GL_CXXALIAS_SYS (frexpl, long double, (long double x, int *expptr));
 # endif
 #endif
-#if 1 && !(0 && !1)
+#if 1 && !(1 && !0)
 _GL_CXXALIASWARN (frexpl);
 #endif
 #if !1 && defined GNULIB_POSIXCHECK
@@ -1492,7 +1492,7 @@ _GL_WARN_ON_USE (ldexpf, "ldexpf is unportable - "
 _GL_FUNCDECL_RPL (ldexpl, long double, (long double x, int exp));
 _GL_CXXALIAS_RPL (ldexpl, long double, (long double x, int exp));
 #else
-# if !1
+# if !0
 _GL_FUNCDECL_SYS (ldexpl, long double, (long double x, int exp));
 # endif
 # if 1

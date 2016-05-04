@@ -1086,7 +1086,7 @@ _GL_WARN_ON_USE (posix_spawn_file_actions_destroy,
 #if 1
 /* Add an action to FILE-ACTIONS which tells the implementation to call
    'open' for the given file during the 'spawn' call.  */
-# if 0
+# if 1
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   define posix_spawn_file_actions_addopen rpl_posix_spawn_file_actions_addopen
 #  endif
@@ -1125,7 +1125,7 @@ _GL_WARN_ON_USE (posix_spawn_file_actions_addopen,
 #if 1
 /* Add an action to FILE-ACTIONS which tells the implementation to call
    'close' for the given file descriptor during the 'spawn' call.  */
-# if 0
+# if 1
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   define posix_spawn_file_actions_addclose rpl_posix_spawn_file_actions_addclose
 #  endif
@@ -1156,7 +1156,7 @@ _GL_WARN_ON_USE (posix_spawn_file_actions_addclose,
 #if 1
 /* Add an action to FILE-ACTIONS which tells the implementation to call
    'dup2' for the given file descriptors during the 'spawn' call.  */
-# if 0
+# if 1
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   define posix_spawn_file_actions_adddup2 rpl_posix_spawn_file_actions_adddup2
 #  endif

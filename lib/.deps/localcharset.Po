@@ -1,52 +1,115 @@
-lib/localcharset.o: lib/localcharset.c /usr/include/stdc-predef.h \
- lib/config.h lib/localcharset.h lib/fcntl.h lib/sys/types.h \
- /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/features.h \
- /usr/include/x86_64-linux-gnu/sys/cdefs.h \
- /usr/include/x86_64-linux-gnu/bits/wordsize.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h lib/time.h \
- /usr/include/time.h /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h \
- /usr/include/endian.h /usr/include/x86_64-linux-gnu/bits/endian.h \
- /usr/include/x86_64-linux-gnu/bits/byteswap.h \
- /usr/include/x86_64-linux-gnu/bits/byteswap-16.h \
- /usr/include/x86_64-linux-gnu/sys/select.h \
- /usr/include/x86_64-linux-gnu/bits/select.h \
- /usr/include/x86_64-linux-gnu/bits/sigset.h \
- /usr/include/x86_64-linux-gnu/bits/time.h \
- /usr/include/x86_64-linux-gnu/bits/select2.h \
- /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h /usr/include/fcntl.h \
- /usr/include/x86_64-linux-gnu/bits/fcntl.h \
- /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
- /usr/include/x86_64-linux-gnu/bits/uio.h \
- /usr/include/x86_64-linux-gnu/bits/stat.h \
- /usr/include/x86_64-linux-gnu/bits/fcntl2.h lib/stdio.h \
- /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
- lib/wchar.h /usr/include/wchar.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h \
- /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
- /usr/include/x86_64-linux-gnu/bits/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/stdio2.h lib/string.h \
- /usr/include/string.h /usr/include/xlocale.h \
- /usr/include/x86_64-linux-gnu/bits/string.h \
- /usr/include/x86_64-linux-gnu/bits/string2.h lib/stdlib.h \
- /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/string3.h \
- /usr/include/x86_64-linux-gnu/bits/waitflags.h \
- /usr/include/x86_64-linux-gnu/bits/waitstatus.h lib/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib.h lib/unistd.h \
- /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
- /usr/include/x86_64-linux-gnu/bits/environments.h \
- /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
- /usr/include/x86_64-linux-gnu/bits/unistd.h /usr/include/langinfo.h \
- /usr/include/nl_types.h /usr/include/x86_64-linux-gnu/bits/locale.h \
- lib/configmake.h
-
-/usr/include/stdc-predef.h:
+lib/localcharset.o: lib/localcharset.c lib/config.h lib/localcharset.h \
+ lib/fcntl.h lib/sys/types.h /usr/include/sys/types.h \
+ /usr/include/_ansi.h /usr/include/newlib.h /usr/include/sys/config.h \
+ /usr/include/machine/ieeefp.h /usr/include/sys/features.h \
+ /usr/include/cygwin/config.h /usr/include/sys/cdefs.h \
+ /usr/include/machine/_default_types.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/stddef.h \
+ /usr/include/machine/_types.h /usr/include/sys/_types.h \
+ /usr/include/sys/lock.h /usr/include/sys/_stdint.h \
+ /usr/include/machine/types.h /usr/include/cygwin/types.h \
+ /usr/include/endian.h /usr/include/bits/endian.h /usr/include/byteswap.h \
+ /usr/include/bits/wordsize.h /usr/include/sys/_timespec.h \
+ /usr/include/sys/sysmacros.h lib/sys/stat.h lib/time.h \
+ /usr/include/time.h /usr/include/_ansi.h /usr/include/sys/reent.h \
+ /usr/include/machine/time.h /usr/include/sys/timespec.h \
+ /usr/include/cygwin/time.h lib/signal.h /usr/include/signal.h \
+ /usr/include/sys/signal.h /usr/include/sys/_sigset.h \
+ /usr/include/cygwin/signal.h /usr/include/sys/ucontext.h \
+ /usr/include/sys/stat.h /usr/include/cygwin/stat.h /usr/include/fcntl.h \
+ /usr/include/sys/fcntl.h /usr/include/sys/_default_fcntl.h \
+ /usr/include/sys/time.h /usr/include/sys/_timeval.h \
+ /usr/include/sys/select.h lib/unistd.h /usr/include/unistd.h \
+ /usr/include/sys/unistd.h /usr/include/getopt.h lib/stdlib.h \
+ /usr/include/stdlib.h /usr/include/machine/stdlib.h lib/alloca.h \
+ /usr/include/cygwin/stdlib.h /usr/include/cygwin/wait.h lib/stdio.h \
+ /usr/include/stdio.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/stdarg.h \
+ /usr/include/sys/stdio.h lib/string.h /usr/include/string.h \
+ /usr/include/sys/string.h /usr/include/langinfo.h \
+ /usr/include/w32api/windows.h /usr/include/w32api/_mingw.h \
+ /usr/include/w32api/_mingw_mac.h /usr/include/w32api/_mingw_secapi.h \
+ /usr/include/w32api/_cygwin.h /usr/include/w32api/vadefs.h \
+ /usr/include/w32api/sdks/_mingw_directx.h \
+ /usr/include/w32api/sdks/_mingw_ddk.h /usr/include/w32api/sdkddkver.h \
+ /usr/include/w32api/excpt.h /usr/include/w32api/crtdefs.h \
+ /usr/include/w32api/windef.h /usr/include/w32api/minwindef.h \
+ /usr/include/w32api/winapifamily.h /usr/include/w32api/specstrings.h \
+ /usr/include/w32api/sal.h /usr/include/w32api/winnt.h \
+ /usr/include/w32api/_mingw_unicode.h /usr/include/ctype.h \
+ /usr/include/w32api/apiset.h /usr/include/w32api/psdk_inc/intrin-impl.h \
+ /usr/include/w32api/basetsd.h /usr/include/w32api/guiddef.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/x86intrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/ia32intrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/mmintrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/xmmintrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/mm_malloc.h \
+ /usr/include/errno.h /usr/include/sys/errno.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/emmintrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/pmmintrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/tmmintrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/ammintrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/smmintrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/popcntintrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/wmmintrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/immintrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/avxintrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/avx2intrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/avx512fintrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/avx512erintrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/avx512pfintrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/avx512cdintrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/shaintrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/lzcntintrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/bmiintrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/bmi2intrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/fmaintrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/f16cintrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/rtmintrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/xtestintrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/mm3dnow.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/prfchwintrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/fma4intrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/xopintrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/lwpintrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/tbmintrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/rdseedintrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/fxsrintrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/xsaveintrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/xsaveoptintrin.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/adxintrin.h \
+ /usr/include/w32api/pshpack4.h /usr/include/w32api/poppack.h \
+ /usr/include/w32api/pshpack4.h /usr/include/w32api/pshpack2.h \
+ /usr/include/w32api/poppack.h /usr/include/w32api/pshpack2.h \
+ /usr/include/w32api/pshpack8.h /usr/include/w32api/pshpack8.h \
+ /usr/include/w32api/ktmtypes.h /usr/include/w32api/winbase.h \
+ /usr/include/w32api/apisetcconv.h /usr/include/w32api/minwinbase.h \
+ /usr/include/w32api/bemapiset.h /usr/include/w32api/debugapi.h \
+ /usr/include/w32api/errhandlingapi.h /usr/include/w32api/fibersapi.h \
+ /usr/include/w32api/fileapi.h /usr/include/w32api/handleapi.h \
+ /usr/include/w32api/heapapi.h /usr/include/w32api/ioapiset.h \
+ /usr/include/w32api/interlockedapi.h /usr/include/w32api/jobapi.h \
+ /usr/include/w32api/libloaderapi.h /usr/include/w32api/memoryapi.h \
+ /usr/include/w32api/namedpipeapi.h /usr/include/w32api/namespaceapi.h \
+ /usr/include/w32api/processenv.h /usr/include/w32api/processthreadsapi.h \
+ /usr/include/w32api/processtopologyapi.h \
+ /usr/include/w32api/profileapi.h /usr/include/w32api/realtimeapiset.h \
+ /usr/include/w32api/securityappcontainer.h \
+ /usr/include/w32api/securitybaseapi.h /usr/include/w32api/synchapi.h \
+ /usr/include/w32api/sysinfoapi.h /usr/include/w32api/systemtopologyapi.h \
+ /usr/include/w32api/threadpoolapiset.h \
+ /usr/include/w32api/threadpoollegacyapiset.h \
+ /usr/include/w32api/utilapiset.h /usr/include/w32api/wow64apiset.h \
+ /usr/include/w32api/winerror.h /usr/include/w32api/fltwinerror.h \
+ /usr/include/w32api/timezoneapi.h /usr/include/w32api/wingdi.h \
+ /usr/include/w32api/pshpack1.h /usr/include/w32api/winuser.h \
+ /usr/include/w32api/tvout.h /usr/include/w32api/winnls.h \
+ /usr/include/w32api/datetimeapi.h /usr/include/w32api/stringapiset.h \
+ /usr/include/w32api/wincon.h /usr/include/w32api/winver.h \
+ /usr/include/w32api/winreg.h /usr/include/w32api/reason.h \
+ /usr/include/w32api/winnetwk.h /usr/include/w32api/wnnc.h \
+ /usr/include/w32api/virtdisk.h /usr/include/w32api/winsvc.h \
+ /usr/include/w32api/mcx.h /usr/include/w32api/imm.h lib/configmake.h
 
 lib/config.h:
 
@@ -56,130 +119,374 @@ lib/fcntl.h:
 
 lib/sys/types.h:
 
-/usr/include/x86_64-linux-gnu/sys/types.h:
+/usr/include/sys/types.h:
 
-/usr/include/features.h:
+/usr/include/_ansi.h:
 
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+/usr/include/newlib.h:
 
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+/usr/include/sys/config.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+/usr/include/machine/ieeefp.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+/usr/include/sys/features.h:
 
-/usr/include/x86_64-linux-gnu/bits/types.h:
+/usr/include/cygwin/config.h:
 
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+/usr/include/sys/cdefs.h:
+
+/usr/include/machine/_default_types.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/stddef.h:
+
+/usr/include/machine/_types.h:
+
+/usr/include/sys/_types.h:
+
+/usr/include/sys/lock.h:
+
+/usr/include/sys/_stdint.h:
+
+/usr/include/machine/types.h:
+
+/usr/include/cygwin/types.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/byteswap.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/sys/_timespec.h:
+
+/usr/include/sys/sysmacros.h:
+
+lib/sys/stat.h:
 
 lib/time.h:
 
 /usr/include/time.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h:
+/usr/include/_ansi.h:
 
-/usr/include/endian.h:
+/usr/include/sys/reent.h:
 
-/usr/include/x86_64-linux-gnu/bits/endian.h:
+/usr/include/machine/time.h:
 
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+/usr/include/sys/timespec.h:
 
-/usr/include/x86_64-linux-gnu/bits/byteswap-16.h:
+/usr/include/cygwin/time.h:
 
-/usr/include/x86_64-linux-gnu/sys/select.h:
+lib/signal.h:
 
-/usr/include/x86_64-linux-gnu/bits/select.h:
+/usr/include/signal.h:
 
-/usr/include/x86_64-linux-gnu/bits/sigset.h:
+/usr/include/sys/signal.h:
 
-/usr/include/x86_64-linux-gnu/bits/time.h:
+/usr/include/sys/_sigset.h:
 
-/usr/include/x86_64-linux-gnu/bits/select2.h:
+/usr/include/cygwin/signal.h:
 
-/usr/include/x86_64-linux-gnu/sys/sysmacros.h:
+/usr/include/sys/ucontext.h:
 
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+/usr/include/sys/stat.h:
+
+/usr/include/cygwin/stat.h:
 
 /usr/include/fcntl.h:
 
-/usr/include/x86_64-linux-gnu/bits/fcntl.h:
+/usr/include/sys/fcntl.h:
 
-/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:
+/usr/include/sys/_default_fcntl.h:
 
-/usr/include/x86_64-linux-gnu/bits/uio.h:
+/usr/include/sys/time.h:
 
-/usr/include/x86_64-linux-gnu/bits/stat.h:
+/usr/include/sys/_timeval.h:
 
-/usr/include/x86_64-linux-gnu/bits/fcntl2.h:
-
-lib/stdio.h:
-
-/usr/include/stdio.h:
-
-/usr/include/libio.h:
-
-/usr/include/_G_config.h:
-
-lib/wchar.h:
-
-/usr/include/wchar.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio2.h:
-
-lib/string.h:
-
-/usr/include/string.h:
-
-/usr/include/xlocale.h:
-
-/usr/include/x86_64-linux-gnu/bits/string.h:
-
-/usr/include/x86_64-linux-gnu/bits/string2.h:
-
-lib/stdlib.h:
-
-/usr/include/stdlib.h:
-
-/usr/include/x86_64-linux-gnu/bits/string3.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-lib/alloca.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib.h:
+/usr/include/sys/select.h:
 
 lib/unistd.h:
 
 /usr/include/unistd.h:
 
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
-
-/usr/include/x86_64-linux-gnu/bits/environments.h:
-
-/usr/include/x86_64-linux-gnu/bits/confname.h:
+/usr/include/sys/unistd.h:
 
 /usr/include/getopt.h:
 
-/usr/include/x86_64-linux-gnu/bits/unistd.h:
+lib/stdlib.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/machine/stdlib.h:
+
+lib/alloca.h:
+
+/usr/include/cygwin/stdlib.h:
+
+/usr/include/cygwin/wait.h:
+
+lib/stdio.h:
+
+/usr/include/stdio.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/stdarg.h:
+
+/usr/include/sys/stdio.h:
+
+lib/string.h:
+
+/usr/include/string.h:
+
+/usr/include/sys/string.h:
 
 /usr/include/langinfo.h:
 
-/usr/include/nl_types.h:
+/usr/include/w32api/windows.h:
 
-/usr/include/x86_64-linux-gnu/bits/locale.h:
+/usr/include/w32api/_mingw.h:
+
+/usr/include/w32api/_mingw_mac.h:
+
+/usr/include/w32api/_mingw_secapi.h:
+
+/usr/include/w32api/_cygwin.h:
+
+/usr/include/w32api/vadefs.h:
+
+/usr/include/w32api/sdks/_mingw_directx.h:
+
+/usr/include/w32api/sdks/_mingw_ddk.h:
+
+/usr/include/w32api/sdkddkver.h:
+
+/usr/include/w32api/excpt.h:
+
+/usr/include/w32api/crtdefs.h:
+
+/usr/include/w32api/windef.h:
+
+/usr/include/w32api/minwindef.h:
+
+/usr/include/w32api/winapifamily.h:
+
+/usr/include/w32api/specstrings.h:
+
+/usr/include/w32api/sal.h:
+
+/usr/include/w32api/winnt.h:
+
+/usr/include/w32api/_mingw_unicode.h:
+
+/usr/include/ctype.h:
+
+/usr/include/w32api/apiset.h:
+
+/usr/include/w32api/psdk_inc/intrin-impl.h:
+
+/usr/include/w32api/basetsd.h:
+
+/usr/include/w32api/guiddef.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/x86intrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/ia32intrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/mmintrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/xmmintrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/mm_malloc.h:
+
+/usr/include/errno.h:
+
+/usr/include/sys/errno.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/emmintrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/pmmintrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/tmmintrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/ammintrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/smmintrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/popcntintrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/wmmintrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/immintrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/avxintrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/avx2intrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/avx512fintrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/avx512erintrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/avx512pfintrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/avx512cdintrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/shaintrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/lzcntintrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/bmiintrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/bmi2intrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/fmaintrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/f16cintrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/rtmintrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/xtestintrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/mm3dnow.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/prfchwintrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/fma4intrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/xopintrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/lwpintrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/tbmintrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/rdseedintrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/fxsrintrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/xsaveintrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/xsaveoptintrin.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/adxintrin.h:
+
+/usr/include/w32api/pshpack4.h:
+
+/usr/include/w32api/poppack.h:
+
+/usr/include/w32api/pshpack4.h:
+
+/usr/include/w32api/pshpack2.h:
+
+/usr/include/w32api/poppack.h:
+
+/usr/include/w32api/pshpack2.h:
+
+/usr/include/w32api/pshpack8.h:
+
+/usr/include/w32api/pshpack8.h:
+
+/usr/include/w32api/ktmtypes.h:
+
+/usr/include/w32api/winbase.h:
+
+/usr/include/w32api/apisetcconv.h:
+
+/usr/include/w32api/minwinbase.h:
+
+/usr/include/w32api/bemapiset.h:
+
+/usr/include/w32api/debugapi.h:
+
+/usr/include/w32api/errhandlingapi.h:
+
+/usr/include/w32api/fibersapi.h:
+
+/usr/include/w32api/fileapi.h:
+
+/usr/include/w32api/handleapi.h:
+
+/usr/include/w32api/heapapi.h:
+
+/usr/include/w32api/ioapiset.h:
+
+/usr/include/w32api/interlockedapi.h:
+
+/usr/include/w32api/jobapi.h:
+
+/usr/include/w32api/libloaderapi.h:
+
+/usr/include/w32api/memoryapi.h:
+
+/usr/include/w32api/namedpipeapi.h:
+
+/usr/include/w32api/namespaceapi.h:
+
+/usr/include/w32api/processenv.h:
+
+/usr/include/w32api/processthreadsapi.h:
+
+/usr/include/w32api/processtopologyapi.h:
+
+/usr/include/w32api/profileapi.h:
+
+/usr/include/w32api/realtimeapiset.h:
+
+/usr/include/w32api/securityappcontainer.h:
+
+/usr/include/w32api/securitybaseapi.h:
+
+/usr/include/w32api/synchapi.h:
+
+/usr/include/w32api/sysinfoapi.h:
+
+/usr/include/w32api/systemtopologyapi.h:
+
+/usr/include/w32api/threadpoolapiset.h:
+
+/usr/include/w32api/threadpoollegacyapiset.h:
+
+/usr/include/w32api/utilapiset.h:
+
+/usr/include/w32api/wow64apiset.h:
+
+/usr/include/w32api/winerror.h:
+
+/usr/include/w32api/fltwinerror.h:
+
+/usr/include/w32api/timezoneapi.h:
+
+/usr/include/w32api/wingdi.h:
+
+/usr/include/w32api/pshpack1.h:
+
+/usr/include/w32api/winuser.h:
+
+/usr/include/w32api/tvout.h:
+
+/usr/include/w32api/winnls.h:
+
+/usr/include/w32api/datetimeapi.h:
+
+/usr/include/w32api/stringapiset.h:
+
+/usr/include/w32api/wincon.h:
+
+/usr/include/w32api/winver.h:
+
+/usr/include/w32api/winreg.h:
+
+/usr/include/w32api/reason.h:
+
+/usr/include/w32api/winnetwk.h:
+
+/usr/include/w32api/wnnc.h:
+
+/usr/include/w32api/virtdisk.h:
+
+/usr/include/w32api/winsvc.h:
+
+/usr/include/w32api/mcx.h:
+
+/usr/include/w32api/imm.h:
 
 lib/configmake.h:

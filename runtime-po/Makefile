@@ -22,7 +22,7 @@ srcdir = .
 top_srcdir = ..
 
 
-prefix = /usr/local
+prefix = /usr/bin
 exec_prefix = ${prefix}
 datarootdir = ${prefix}/share
 datadir = ${datarootdir}
@@ -35,32 +35,32 @@ INSTALL_DATA = ${INSTALL} -m 644
 # Define $(MKDIR_P).
 # In automake <= 1.9.x, $(mkdir_p) is defined either as "mkdir -p --" or as
 # "$(mkinstalldirs)" or as "$(install_sh) -d". For these automake versions,
-# ${SHELL} /home/primi/src/bison-3.0.2/build-aux/install-sh does not start with $(SHELL), so we add it.
+# ${SHELL} /cygdrive/c/src/bison-3.0.2/build-aux/install-sh does not start with $(SHELL), so we add it.
 # In automake >= 1.10, $(MKDIR_P) is derived from ${MKDIR_P}, which is defined
 # either as "/path/to/mkdir -p" or ".../install-sh -c -d". For these automake
 # versions, $(mkinstalldirs) and $(install_sh) are unused.
 # Gnulib provides a backport of autoconf 2.60's AC_PROG_MKDIR_P,
 # with a fix from autoconf 2.62 for interoperability with automake 1.9.6,
 # so use $(MKDIR_P) in the rest of this makefile.
-mkinstalldirs = $(SHELL) ${SHELL} /home/primi/src/bison-3.0.2/build-aux/install-sh -d
-install_sh = $(SHELL) ${SHELL} /home/primi/src/bison-3.0.2/build-aux/install-sh
-MKDIR_P = /bin/mkdir -p
+mkinstalldirs = $(SHELL) ${SHELL} /cygdrive/c/src/bison-3.0.2/build-aux/install-sh -d
+install_sh = $(SHELL) ${SHELL} /cygdrive/c/src/bison-3.0.2/build-aux/install-sh
+MKDIR_P = /usr/bin/mkdir -p
 mkdir_p = $(MKDIR_P)
 
-GMSGFMT_ = /usr/bin/msgfmt
-GMSGFMT_no = /usr/bin/msgfmt
-GMSGFMT_yes = /usr/bin/msgfmt
+GMSGFMT_ = /cygdrive/c/gettext-iconv/msgfmt
+GMSGFMT_no = /cygdrive/c/gettext-iconv/msgfmt
+GMSGFMT_yes = /cygdrive/c/gettext-iconv/msgfmt
 GMSGFMT = $(GMSGFMT_$(USE_MSGCTXT))
-MSGFMT_ = /usr/bin/msgfmt
-MSGFMT_no = /usr/bin/msgfmt
-MSGFMT_yes = /usr/bin/msgfmt
+MSGFMT_ = /cygdrive/c/gettext-iconv/msgfmt
+MSGFMT_no = /cygdrive/c/gettext-iconv/msgfmt
+MSGFMT_yes = /cygdrive/c/gettext-iconv/msgfmt
 MSGFMT = $(MSGFMT_$(USE_MSGCTXT))
-XGETTEXT_ = /usr/bin/xgettext
-XGETTEXT_no = /usr/bin/xgettext
-XGETTEXT_yes = /usr/bin/xgettext
+XGETTEXT_ = /cygdrive/c/gettext-iconv/xgettext
+XGETTEXT_no = /cygdrive/c/gettext-iconv/xgettext
+XGETTEXT_yes = /cygdrive/c/gettext-iconv/xgettext
 XGETTEXT = $(XGETTEXT_$(USE_MSGCTXT))
 MSGMERGE = msgmerge
-MSGMERGE_UPDATE = /usr/bin/msgmerge --update
+MSGMERGE_UPDATE = /cygdrive/c/gettext-iconv/msgmerge --update
 MSGINIT = msginit
 MSGCONV = msgconv
 MSGFILTER = msgfilter
@@ -156,7 +156,7 @@ EXTRA_LOCALE_CATEGORIES =
 	mv t-$@ $@
 
 
-all: all-yes
+all: all-no
 
 all-yes: stamp-po
 all-no:
@@ -270,7 +270,7 @@ $(POFILES): $(srcdir)/$(DOMAIN).pot
 
 install: install-exec install-data
 install-exec:
-install-data: install-data-yes
+install-data: install-data-no
 	if test "$(PACKAGE)" = "gettext-tools"; then \
 	  $(MKDIR_P) $(DESTDIR)$(gettextsrcdir); \
 	  for file in $(DISTFILES.common) Makevars.template; do \
@@ -329,7 +329,7 @@ install-strip: install
 install-dvi install-html install-info install-pdf install-ps:
 installdirs: installdirs-exec installdirs-data
 installdirs-exec:
-installdirs-data: installdirs-data-yes
+installdirs-data: installdirs-data-no
 	if test "$(PACKAGE)" = "gettext-tools"; then \
 	  $(MKDIR_P) $(DESTDIR)$(gettextsrcdir); \
 	else \
@@ -373,7 +373,7 @@ installcheck:
 
 uninstall: uninstall-exec uninstall-data
 uninstall-exec:
-uninstall-data: uninstall-data-yes
+uninstall-data: uninstall-data-no
 	if test "$(PACKAGE)" = "gettext-tools"; then \
 	  for file in $(DISTFILES.common) Makevars.template; do \
 	    rm -f $(DESTDIR)$(gettextsrcdir)/$$file; \
@@ -493,11 +493,11 @@ update-gmo: Makefile $(GMOFILES)
 
 # Recreate Makefile by invoking config.status. Explicitly invoke the shell,
 # because execution permission bits may not work on the current file system.
-# Use /bin/bash, which is the shell determined by autoconf for the use by its
+# Use /bin/sh, which is the shell determined by autoconf for the use by its
 # scripts, not $(SHELL) which is hardwired to /bin/sh and may be deficient.
 Makefile: Makefile.in.in Makevars $(top_builddir)/config.status POTFILES.in LINGUAS
 	cd $(top_builddir) \
-	  && /bin/bash ./config.status $(subdir)/$@.in po-directories
+	  && /bin/sh ./config.status $(subdir)/$@.in po-directories
 
 force:
 

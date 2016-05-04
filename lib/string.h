@@ -1321,7 +1321,7 @@ _GL_WARN_ON_USE (strsignal, "strsignal is unportable - "
 #endif
 
 #if 1
-# if !1
+# if !0
 _GL_FUNCDECL_SYS (strverscmp, int, (const char *, const char *)
                                    _GL_ATTRIBUTE_PURE
                                    _GL_ARG_NONNULL ((1, 2)));

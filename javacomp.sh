@@ -27,12 +27,12 @@
 # The extra CLASSPATH must have been set prior to calling this script.
 # Options that can be passed are -O, -g and "-d DIRECTORY".
 
-CONF_JAVAC='javac -target 1.4 -source 1.3'
+CONF_JAVAC=''
 CONF_CLASSPATH=''
 if test -n ""; then
   # Combine given CLASSPATH and configured CLASSPATH.
   if test -n "$CLASSPATH"; then
-    CLASSPATH="$CLASSPATH${CONF_CLASSPATH:+:$CONF_CLASSPATH}"
+    CLASSPATH="$CLASSPATH${CONF_CLASSPATH:+;$CONF_CLASSPATH}"
   else
     CLASSPATH="$CONF_CLASSPATH"
   fi
@@ -48,7 +48,7 @@ else
     test -z "$JAVA_VERBOSE" || echo "$CONF_JAVAC $@"
     exec $CONF_JAVAC "$@"
   else
-    if test -n "1"; then
+    if test -n ""; then
       # In this case, $CONF_JAVAC starts with "javac".
       CLASSPATH="$CLASSPATH"
       export CLASSPATH
@@ -59,7 +59,7 @@ else
         # In this case, $CONF_JAVAC starts with "jikes".
         # Combine given CLASSPATH and configured CLASSPATH.
         if test -n "$CLASSPATH"; then
-          CLASSPATH="$CLASSPATH${CONF_CLASSPATH:+:$CONF_CLASSPATH}"
+          CLASSPATH="$CLASSPATH${CONF_CLASSPATH:+;$CONF_CLASSPATH}"
         else
           CLASSPATH="$CONF_CLASSPATH"
         fi

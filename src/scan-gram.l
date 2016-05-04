@@ -46,7 +46,7 @@
 #define YY_DECL GRAM_LEX_DECL
 
 #define YY_USER_INIT                                    \
-   code_start = scanner_cursor = loc->start;            \
+   boundary code_start = scanner_cursor = loc->start;            \
 
 /* Location of scanner cursor.  */
 static boundary scanner_cursor;

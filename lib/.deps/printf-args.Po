@@ -1,45 +1,110 @@
-lib/printf-args.o: lib/printf-args.c /usr/include/stdc-predef.h \
- lib/config.h lib/printf-args.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h lib/wchar.h \
- /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
- /usr/include/x86_64-linux-gnu/bits/wordsize.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs-64.h /usr/include/wchar.h \
- lib/stdio.h /usr/include/stdio.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h /usr/include/xlocale.h \
- /usr/include/x86_64-linux-gnu/bits/wchar2.h
-
-/usr/include/stdc-predef.h:
+lib/printf-args.o: lib/printf-args.c lib/config.h lib/printf-args.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/stddef.h lib/wchar.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/machine/_default_types.h /usr/include/sys/features.h \
+ lib/stdio.h /usr/include/stdio.h /usr/include/_ansi.h \
+ /usr/include/newlib.h /usr/include/sys/config.h \
+ /usr/include/machine/ieeefp.h /usr/include/cygwin/config.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/stdarg.h \
+ /usr/include/sys/reent.h /usr/include/_ansi.h /usr/include/sys/_types.h \
+ /usr/include/machine/_types.h /usr/include/sys/lock.h lib/sys/types.h \
+ /usr/include/sys/types.h /usr/include/sys/_stdint.h \
+ /usr/include/machine/types.h /usr/include/cygwin/types.h \
+ /usr/include/endian.h /usr/include/bits/endian.h /usr/include/byteswap.h \
+ /usr/include/bits/wordsize.h /usr/include/sys/_timespec.h \
+ /usr/include/sys/sysmacros.h /usr/include/sys/stdio.h lib/time.h \
+ /usr/include/time.h /usr/include/machine/time.h \
+ /usr/include/sys/timespec.h /usr/include/cygwin/time.h lib/signal.h \
+ /usr/include/signal.h /usr/include/sys/signal.h \
+ /usr/include/sys/_sigset.h /usr/include/cygwin/signal.h \
+ /usr/include/sys/ucontext.h /usr/include/wchar.h
 
 lib/config.h:
 
 lib/printf-args.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h:
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/stddef.h:
 
 lib/wchar.h:
 
 /usr/include/features.h:
 
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+/usr/include/sys/cdefs.h:
 
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+/usr/include/machine/_default_types.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/usr/include/wchar.h:
+/usr/include/sys/features.h:
 
 lib/stdio.h:
 
 /usr/include/stdio.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h:
+/usr/include/_ansi.h:
 
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
+/usr/include/newlib.h:
 
-/usr/include/xlocale.h:
+/usr/include/sys/config.h:
 
-/usr/include/x86_64-linux-gnu/bits/wchar2.h:
+/usr/include/machine/ieeefp.h:
+
+/usr/include/cygwin/config.h:
+
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/stdarg.h:
+
+/usr/include/sys/reent.h:
+
+/usr/include/_ansi.h:
+
+/usr/include/sys/_types.h:
+
+/usr/include/machine/_types.h:
+
+/usr/include/sys/lock.h:
+
+lib/sys/types.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/sys/_stdint.h:
+
+/usr/include/machine/types.h:
+
+/usr/include/cygwin/types.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/byteswap.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/sys/_timespec.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/sys/stdio.h:
+
+lib/time.h:
+
+/usr/include/time.h:
+
+/usr/include/machine/time.h:
+
+/usr/include/sys/timespec.h:
+
+/usr/include/cygwin/time.h:
+
+lib/signal.h:
+
+/usr/include/signal.h:
+
+/usr/include/sys/signal.h:
+
+/usr/include/sys/_sigset.h:
+
+/usr/include/cygwin/signal.h:
+
+/usr/include/sys/ucontext.h:
+
+/usr/include/wchar.h:

@@ -966,7 +966,7 @@ _GL_WARN_ON_USE (getdomainname, "getdomainname is unportable - "
 #if 1
 /* Return the maximum number of file descriptors in the current process.
    In POSIX, this is same as sysconf (_SC_OPEN_MAX).  */
-# if 0
+# if 1
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   undef getdtablesize
 #   define getdtablesize rpl_getdtablesize

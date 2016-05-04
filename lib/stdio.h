@@ -1053,7 +1053,7 @@ _GL_FUNCDECL_RPL (obstack_printf, int,
 _GL_CXXALIAS_RPL (obstack_printf, int,
                   (struct obstack *obs, const char *format, ...));
 # else
-#  if !1
+#  if !0
 _GL_FUNCDECL_SYS (obstack_printf, int,
                   (struct obstack *obs, const char *format, ...)
                   _GL_ATTRIBUTE_FORMAT_PRINTF (2, 3)
@@ -1074,7 +1074,7 @@ _GL_FUNCDECL_RPL (obstack_vprintf, int,
 _GL_CXXALIAS_RPL (obstack_vprintf, int,
                   (struct obstack *obs, const char *format, va_list args));
 # else
-#  if !1
+#  if !0
 _GL_FUNCDECL_SYS (obstack_vprintf, int,
                   (struct obstack *obs, const char *format, va_list args)
                   _GL_ATTRIBUTE_FORMAT_PRINTF (2, 0)

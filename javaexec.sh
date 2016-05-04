@@ -31,7 +31,7 @@ CONF_CLASSPATH=''
 if test -n ""; then
   # Combine given CLASSPATH and configured CLASSPATH.
   if test -n "$CLASSPATH"; then
-    CLASSPATH="$CLASSPATH${CONF_CLASSPATH:+:$CONF_CLASSPATH}"
+    CLASSPATH="$CLASSPATH${CONF_CLASSPATH:+;$CONF_CLASSPATH}"
   else
     CLASSPATH="$CONF_CLASSPATH"
   fi

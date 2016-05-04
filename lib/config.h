@@ -45,11 +45,11 @@
 /* #undef DBL_SIGNBIT_WORD */
 
 /* Define to 1 if // is a file system root distinct from /. */
-/* #undef DOUBLE_SLASH_IS_DISTINCT_ROOT */
+#define DOUBLE_SLASH_IS_DISTINCT_ROOT 1
 
 /* Define to 1 if translation of program messages to the user's native
    language is requested. */
-#define ENABLE_NLS 1
+/* #undef ENABLE_NLS */
 
 /* Define this to 1 if F_DUPFD behavior does not match POSIX */
 /* #undef FCNTL_DUPFD_BUGGY */
@@ -324,7 +324,7 @@
 #define HAVE_CALLOC_POSIX 1
 
 /* Define to 1 if you have the `catgets' function. */
-#define HAVE_CATGETS 1
+/* #undef HAVE_CATGETS */
 
 /* Define to 1 if you have the Mac OS X function CFLocaleCopyCurrent in the
    CoreFoundation framework. */
@@ -354,7 +354,7 @@
 
 /* Define if the GNU dcgettext() function is already present or preinstalled.
    */
-#define HAVE_DCGETTEXT 1
+/* #undef HAVE_DCGETTEXT */
 
 /* Define to 1 if you have the declaration of `alarm', and to 0 if you don't.
    */
@@ -366,7 +366,7 @@
 
 /* Define to 1 if you have the declaration of `clock', and to 0 if you don't.
    */
-#define HAVE_DECL_CLOCK 0
+#define HAVE_DECL_CLOCK 1
 
 /* Define to 1 if you have the declaration of `copysign', and to 0 if you
    don't. */
@@ -442,7 +442,7 @@
 
 /* Define to 1 if you have the declaration of `obstack_printf', and to 0 if
    you don't. */
-#define HAVE_DECL_OBSTACK_PRINTF 1
+#define HAVE_DECL_OBSTACK_PRINTF 0
 
 /* Define to 1 if you have the declaration of `program_invocation_name', and
    to 0 if you don't. */
@@ -525,7 +525,7 @@
 #define HAVE_FEATURES_H 1
 
 /* Define if the frexpl function is available in libc. */
-#define HAVE_FREXPL_IN_LIBC 1
+/* #undef HAVE_FREXPL_IN_LIBC */
 
 /* Define if the frexp function is available in libc. */
 #define HAVE_FREXP_IN_LIBC 1
@@ -540,7 +540,7 @@
 #define HAVE_GETOPT_LONG_ONLY 1
 
 /* Define if the GNU gettext() function is already present or preinstalled. */
-#define HAVE_GETTEXT 1
+/* #undef HAVE_GETTEXT */
 
 /* Define if you have the iconv() function and it works. */
 /* #undef HAVE_ICONV */
@@ -574,10 +574,10 @@
 #define HAVE_LANGINFO_CODESET 1
 
 /* Define if the ldexpl() function is available. */
-#define HAVE_LDEXPL 1
+/* #undef HAVE_LDEXPL */
 
 /* Define if the ldexpl function is available in libc. */
-#define HAVE_LDEXPL_IN_LIBC 1
+/* #undef HAVE_LDEXPL_IN_LIBC */
 
 /* Define if the ldexp function is available in libc. */
 #define HAVE_LDEXP_IN_LIBC 1
@@ -628,10 +628,10 @@
 /* #undef HAVE_NL_LANGINFO */
 
 /* Define to 1 if libc includes obstacks. */
-#define HAVE_OBSTACK 1
+/* #undef HAVE_OBSTACK */
 
 /* Define to 1 if you have the `obstack_printf' function. */
-#define HAVE_OBSTACK_PRINTF 1
+/* #undef HAVE_OBSTACK_PRINTF */
 
 /* Define to 1 if you have the <paths.h> header file. */
 /* #undef HAVE_PATHS_H */
@@ -667,19 +667,19 @@
 #define HAVE_RAW_DECL_ACOSF 1
 
 /* Define to 1 if acosl is declared even after undefining macros. */
-#define HAVE_RAW_DECL_ACOSL 1
+/* #undef HAVE_RAW_DECL_ACOSL */
 
 /* Define to 1 if asinf is declared even after undefining macros. */
 #define HAVE_RAW_DECL_ASINF 1
 
 /* Define to 1 if asinl is declared even after undefining macros. */
-#define HAVE_RAW_DECL_ASINL 1
+/* #undef HAVE_RAW_DECL_ASINL */
 
 /* Define to 1 if atanf is declared even after undefining macros. */
 #define HAVE_RAW_DECL_ATANF 1
 
 /* Define to 1 if atanl is declared even after undefining macros. */
-#define HAVE_RAW_DECL_ATANL 1
+/* #undef HAVE_RAW_DECL_ATANL */
 
 /* Define to 1 if atoll is declared even after undefining macros. */
 #define HAVE_RAW_DECL_ATOLL 1
@@ -698,13 +698,13 @@
 #define HAVE_RAW_DECL_CBRTF 1
 
 /* Define to 1 if cbrtl is declared even after undefining macros. */
-#define HAVE_RAW_DECL_CBRTL 1
+/* #undef HAVE_RAW_DECL_CBRTL */
 
 /* Define to 1 if ceilf is declared even after undefining macros. */
 #define HAVE_RAW_DECL_CEILF 1
 
 /* Define to 1 if ceill is declared even after undefining macros. */
-#define HAVE_RAW_DECL_CEILL 1
+/* #undef HAVE_RAW_DECL_CEILL */
 
 /* Define to 1 if chdir is declared even after undefining macros. */
 #define HAVE_RAW_DECL_CHDIR 1
@@ -719,7 +719,7 @@
 #define HAVE_RAW_DECL_COPYSIGNF 1
 
 /* Define to 1 if copysignl is declared even after undefining macros. */
-#define HAVE_RAW_DECL_COPYSIGNL 1
+/* #undef HAVE_RAW_DECL_COPYSIGNL */
 
 /* Define to 1 if cosf is declared even after undefining macros. */
 #define HAVE_RAW_DECL_COSF 1
@@ -728,7 +728,7 @@
 #define HAVE_RAW_DECL_COSHF 1
 
 /* Define to 1 if cosl is declared even after undefining macros. */
-#define HAVE_RAW_DECL_COSL 1
+/* #undef HAVE_RAW_DECL_COSL */
 
 /* Define to 1 if dprintf is declared even after undefining macros. */
 #define HAVE_RAW_DECL_DPRINTF 1
@@ -758,13 +758,13 @@
 #define HAVE_RAW_DECL_EXP2F 1
 
 /* Define to 1 if exp2l is declared even after undefining macros. */
-#define HAVE_RAW_DECL_EXP2L 1
+/* #undef HAVE_RAW_DECL_EXP2L */
 
 /* Define to 1 if expf is declared even after undefining macros. */
 #define HAVE_RAW_DECL_EXPF 1
 
 /* Define to 1 if expl is declared even after undefining macros. */
-#define HAVE_RAW_DECL_EXPL 1
+/* #undef HAVE_RAW_DECL_EXPL */
 
 /* Define to 1 if expm1 is declared even after undefining macros. */
 #define HAVE_RAW_DECL_EXPM1 1
@@ -773,13 +773,13 @@
 #define HAVE_RAW_DECL_EXPM1F 1
 
 /* Define to 1 if expm1l is declared even after undefining macros. */
-#define HAVE_RAW_DECL_EXPM1L 1
+/* #undef HAVE_RAW_DECL_EXPM1L */
 
 /* Define to 1 if fabsf is declared even after undefining macros. */
 #define HAVE_RAW_DECL_FABSF 1
 
 /* Define to 1 if fabsl is declared even after undefining macros. */
-#define HAVE_RAW_DECL_FABSL 1
+/* #undef HAVE_RAW_DECL_FABSL */
 
 /* Define to 1 if faccessat is declared even after undefining macros. */
 #define HAVE_RAW_DECL_FACCESSAT 1
@@ -809,7 +809,7 @@
 #define HAVE_RAW_DECL_FLOORF 1
 
 /* Define to 1 if floorl is declared even after undefining macros. */
-#define HAVE_RAW_DECL_FLOORL 1
+/* #undef HAVE_RAW_DECL_FLOORL */
 
 /* Define to 1 if fma is declared even after undefining macros. */
 #define HAVE_RAW_DECL_FMA 1
@@ -818,7 +818,7 @@
 #define HAVE_RAW_DECL_FMAF 1
 
 /* Define to 1 if fmal is declared even after undefining macros. */
-#define HAVE_RAW_DECL_FMAL 1
+/* #undef HAVE_RAW_DECL_FMAL */
 
 /* Define to 1 if fmod is declared even after undefining macros. */
 #define HAVE_RAW_DECL_FMOD 1
@@ -827,16 +827,16 @@
 #define HAVE_RAW_DECL_FMODF 1
 
 /* Define to 1 if fmodl is declared even after undefining macros. */
-#define HAVE_RAW_DECL_FMODL 1
+/* #undef HAVE_RAW_DECL_FMODL */
 
 /* Define to 1 if fpurge is declared even after undefining macros. */
-/* #undef HAVE_RAW_DECL_FPURGE */
+#define HAVE_RAW_DECL_FPURGE 1
 
 /* Define to 1 if frexpf is declared even after undefining macros. */
 #define HAVE_RAW_DECL_FREXPF 1
 
 /* Define to 1 if frexpl is declared even after undefining macros. */
-#define HAVE_RAW_DECL_FREXPL 1
+/* #undef HAVE_RAW_DECL_FREXPL */
 
 /* Define to 1 if fseeko is declared even after undefining macros. */
 #define HAVE_RAW_DECL_FSEEKO 1
@@ -881,7 +881,7 @@
 #define HAVE_RAW_DECL_GETLINE 1
 
 /* Define to 1 if getloadavg is declared even after undefining macros. */
-#define HAVE_RAW_DECL_GETLOADAVG 1
+/* #undef HAVE_RAW_DECL_GETLOADAVG */
 
 /* Define to 1 if getlogin is declared even after undefining macros. */
 #define HAVE_RAW_DECL_GETLOGIN 1
@@ -893,7 +893,7 @@
 #define HAVE_RAW_DECL_GETPAGESIZE 1
 
 /* Define to 1 if gets is declared even after undefining macros. */
-/* #undef HAVE_RAW_DECL_GETS */
+#define HAVE_RAW_DECL_GETS 1
 
 /* Define to 1 if getsubopt is declared even after undefining macros. */
 #define HAVE_RAW_DECL_GETSUBOPT 1
@@ -905,7 +905,7 @@
 #define HAVE_RAW_DECL_GRANTPT 1
 
 /* Define to 1 if group_member is declared even after undefining macros. */
-#define HAVE_RAW_DECL_GROUP_MEMBER 1
+/* #undef HAVE_RAW_DECL_GROUP_MEMBER */
 
 /* Define to 1 if hypotf is declared even after undefining macros. */
 #define HAVE_RAW_DECL_HYPOTF 1
@@ -920,7 +920,7 @@
 #define HAVE_RAW_DECL_ILOGBF 1
 
 /* Define to 1 if ilogbl is declared even after undefining macros. */
-#define HAVE_RAW_DECL_ILOGBL 1
+/* #undef HAVE_RAW_DECL_ILOGBL */
 
 /* Define to 1 if imaxabs is declared even after undefining macros. */
 #define HAVE_RAW_DECL_IMAXABS 1
@@ -932,7 +932,7 @@
 #define HAVE_RAW_DECL_INITSTATE 1
 
 /* Define to 1 if initstate_r is declared even after undefining macros. */
-#define HAVE_RAW_DECL_INITSTATE_R 1
+/* #undef HAVE_RAW_DECL_INITSTATE_R */
 
 /* Define to 1 if isatty is declared even after undefining macros. */
 #define HAVE_RAW_DECL_ISATTY 1
@@ -941,7 +941,7 @@
 #define HAVE_RAW_DECL_ISWCTYPE 1
 
 /* Define to 1 if lchmod is declared even after undefining macros. */
-#define HAVE_RAW_DECL_LCHMOD 1
+/* #undef HAVE_RAW_DECL_LCHMOD */
 
 /* Define to 1 if lchown is declared even after undefining macros. */
 #define HAVE_RAW_DECL_LCHOWN 1
@@ -950,7 +950,7 @@
 #define HAVE_RAW_DECL_LDEXPF 1
 
 /* Define to 1 if ldexpl is declared even after undefining macros. */
-#define HAVE_RAW_DECL_LDEXPL 1
+/* #undef HAVE_RAW_DECL_LDEXPL */
 
 /* Define to 1 if link is declared even after undefining macros. */
 #define HAVE_RAW_DECL_LINK 1
@@ -968,7 +968,7 @@
 #define HAVE_RAW_DECL_LOG10F 1
 
 /* Define to 1 if log10l is declared even after undefining macros. */
-#define HAVE_RAW_DECL_LOG10L 1
+/* #undef HAVE_RAW_DECL_LOG10L */
 
 /* Define to 1 if log1p is declared even after undefining macros. */
 #define HAVE_RAW_DECL_LOG1P 1
@@ -977,7 +977,7 @@
 #define HAVE_RAW_DECL_LOG1PF 1
 
 /* Define to 1 if log1pl is declared even after undefining macros. */
-#define HAVE_RAW_DECL_LOG1PL 1
+/* #undef HAVE_RAW_DECL_LOG1PL */
 
 /* Define to 1 if log2 is declared even after undefining macros. */
 #define HAVE_RAW_DECL_LOG2 1
@@ -986,7 +986,7 @@
 #define HAVE_RAW_DECL_LOG2F 1
 
 /* Define to 1 if log2l is declared even after undefining macros. */
-#define HAVE_RAW_DECL_LOG2L 1
+/* #undef HAVE_RAW_DECL_LOG2L */
 
 /* Define to 1 if logb is declared even after undefining macros. */
 #define HAVE_RAW_DECL_LOGB 1
@@ -995,13 +995,13 @@
 #define HAVE_RAW_DECL_LOGBF 1
 
 /* Define to 1 if logbl is declared even after undefining macros. */
-#define HAVE_RAW_DECL_LOGBL 1
+/* #undef HAVE_RAW_DECL_LOGBL */
 
 /* Define to 1 if logf is declared even after undefining macros. */
 #define HAVE_RAW_DECL_LOGF 1
 
 /* Define to 1 if logl is declared even after undefining macros. */
-#define HAVE_RAW_DECL_LOGL 1
+/* #undef HAVE_RAW_DECL_LOGL */
 
 /* Define to 1 if lseek is declared even after undefining macros. */
 #define HAVE_RAW_DECL_LSEEK 1
@@ -1070,7 +1070,7 @@
 #define HAVE_RAW_DECL_MODFF 1
 
 /* Define to 1 if modfl is declared even after undefining macros. */
-#define HAVE_RAW_DECL_MODFL 1
+/* #undef HAVE_RAW_DECL_MODFL */
 
 /* Define to 1 if openat is declared even after undefining macros. */
 #define HAVE_RAW_DECL_OPENAT 1
@@ -1194,7 +1194,7 @@
 #define HAVE_RAW_DECL_RANDOM 1
 
 /* Define to 1 if random_r is declared even after undefining macros. */
-#define HAVE_RAW_DECL_RANDOM_R 1
+/* #undef HAVE_RAW_DECL_RANDOM_R */
 
 /* Define to 1 if rawmemchr is declared even after undefining macros. */
 #define HAVE_RAW_DECL_RAWMEMCHR 1
@@ -1215,7 +1215,7 @@
 #define HAVE_RAW_DECL_REMAINDERF 1
 
 /* Define to 1 if remainderl is declared even after undefining macros. */
-#define HAVE_RAW_DECL_REMAINDERL 1
+/* #undef HAVE_RAW_DECL_REMAINDERL */
 
 /* Define to 1 if renameat is declared even after undefining macros. */
 #define HAVE_RAW_DECL_RENAMEAT 1
@@ -1227,7 +1227,7 @@
 #define HAVE_RAW_DECL_RINTF 1
 
 /* Define to 1 if rintl is declared even after undefining macros. */
-#define HAVE_RAW_DECL_RINTL 1
+/* #undef HAVE_RAW_DECL_RINTL */
 
 /* Define to 1 if rmdir is declared even after undefining macros. */
 #define HAVE_RAW_DECL_RMDIR 1
@@ -1239,13 +1239,13 @@
 #define HAVE_RAW_DECL_ROUNDF 1
 
 /* Define to 1 if roundl is declared even after undefining macros. */
-#define HAVE_RAW_DECL_ROUNDL 1
+/* #undef HAVE_RAW_DECL_ROUNDL */
 
 /* Define to 1 if rpmatch is declared even after undefining macros. */
 #define HAVE_RAW_DECL_RPMATCH 1
 
 /* Define to 1 if secure_getenv is declared even after undefining macros. */
-#define HAVE_RAW_DECL_SECURE_GETENV 1
+/* #undef HAVE_RAW_DECL_SECURE_GETENV */
 
 /* Define to 1 if setenv is declared even after undefining macros. */
 #define HAVE_RAW_DECL_SETENV 1
@@ -1257,7 +1257,7 @@
 #define HAVE_RAW_DECL_SETSTATE 1
 
 /* Define to 1 if setstate_r is declared even after undefining macros. */
-#define HAVE_RAW_DECL_SETSTATE_R 1
+/* #undef HAVE_RAW_DECL_SETSTATE_R */
 
 /* Define to 1 if setusershell is declared even after undefining macros. */
 #define HAVE_RAW_DECL_SETUSERSHELL 1
@@ -1293,7 +1293,7 @@
 #define HAVE_RAW_DECL_SINHF 1
 
 /* Define to 1 if sinl is declared even after undefining macros. */
-#define HAVE_RAW_DECL_SINL 1
+/* #undef HAVE_RAW_DECL_SINL */
 
 /* Define to 1 if sleep is declared even after undefining macros. */
 #define HAVE_RAW_DECL_SLEEP 1
@@ -1311,7 +1311,7 @@
 #define HAVE_RAW_DECL_SRANDOM 1
 
 /* Define to 1 if srandom_r is declared even after undefining macros. */
-#define HAVE_RAW_DECL_SRANDOM_R 1
+/* #undef HAVE_RAW_DECL_SRANDOM_R */
 
 /* Define to 1 if stat is declared even after undefining macros. */
 #define HAVE_RAW_DECL_STAT 1
@@ -1371,7 +1371,7 @@
 #define HAVE_RAW_DECL_STRTOUMAX 1
 
 /* Define to 1 if strverscmp is declared even after undefining macros. */
-#define HAVE_RAW_DECL_STRVERSCMP 1
+/* #undef HAVE_RAW_DECL_STRVERSCMP */
 
 /* Define to 1 if symlink is declared even after undefining macros. */
 #define HAVE_RAW_DECL_SYMLINK 1
@@ -1386,7 +1386,7 @@
 #define HAVE_RAW_DECL_TANHF 1
 
 /* Define to 1 if tanl is declared even after undefining macros. */
-#define HAVE_RAW_DECL_TANL 1
+/* #undef HAVE_RAW_DECL_TANL */
 
 /* Define to 1 if tmpfile is declared even after undefining macros. */
 #define HAVE_RAW_DECL_TMPFILE 1
@@ -1401,7 +1401,7 @@
 #define HAVE_RAW_DECL_TRUNCF 1
 
 /* Define to 1 if truncl is declared even after undefining macros. */
-#define HAVE_RAW_DECL_TRUNCL 1
+/* #undef HAVE_RAW_DECL_TRUNCL */
 
 /* Define to 1 if ttyname_r is declared even after undefining macros. */
 #define HAVE_RAW_DECL_TTYNAME_R 1
@@ -1653,7 +1653,7 @@
 #define HAVE_STRUCT_TMS 1
 
 /* Define to 1 if you have the `strverscmp' function. */
-#define HAVE_STRVERSCMP 1
+/* #undef HAVE_STRVERSCMP */
 
 /* Define to 1 if you have the `symlink' function. */
 #define HAVE_SYMLINK 1
@@ -1707,7 +1707,7 @@
 #define HAVE_UNSIGNED_LONG_LONG_INT 1
 
 /* Define to 1 if you have the `vasnprintf' function. */
-/* #undef HAVE_VASNPRINTF */
+#define HAVE_VASNPRINTF 1
 
 /* Define to 1 if you have the `vfork' function. */
 /* #undef HAVE_VFORK */
@@ -1716,7 +1716,7 @@
 #define HAVE_VSNPRINTF 1
 
 /* Define to 1 if you have the `waitid' function. */
-#define HAVE_WAITID 1
+/* #undef HAVE_WAITID */
 
 /* Define to 1 if you have the <wchar.h> header file. */
 #define HAVE_WCHAR_H 1
@@ -1786,7 +1786,7 @@
 #define LSTAT_FOLLOWS_SLASHED_SYMLINK 1
 
 /* Define to the GNU M4 executable name. */
-#define M4 "/usr/bin/m4"
+#define M4 "m4"
 
 /* Define to "-g" if GNU M4 supports -g, otherwise to "". */
 #define M4_GNU_OPTION "--gnu"
@@ -1823,11 +1823,11 @@
 
 /* Define if the vasnprintf implementation needs special code for 'double'
    arguments. */
-/* #undef NEED_PRINTF_DOUBLE */
+#define NEED_PRINTF_DOUBLE 1
 
 /* Define if the vasnprintf implementation needs special code for surviving
    out-of-memory conditions. */
-/* #undef NEED_PRINTF_ENOMEM */
+#define NEED_PRINTF_ENOMEM 1
 
 /* Define if the vasnprintf implementation needs special code for the ' flag.
    */
@@ -1851,7 +1851,7 @@
 
 /* Define if the vasnprintf implementation needs special code for 'long
    double' arguments. */
-/* #undef NEED_PRINTF_LONG_DOUBLE */
+#define NEED_PRINTF_LONG_DOUBLE 1
 
 /* Define if the vasnprintf implementation needs special code for supporting
    large precisions without arbitrary bounds. */
@@ -1921,7 +1921,7 @@
 /* #undef REPLACE_STRERROR_0 */
 
 /* Define if vasnprintf exists but is overridden by gnulib. */
-/* #undef REPLACE_VASNPRINTF */
+#define REPLACE_VASNPRINTF 1
 
 /* Define if vfprintf is overridden by a POSIX compliant gnulib
    implementation. */
@@ -1970,7 +1970,7 @@
 
 /* Define if references to the POSIX multithreading library should be made
    weak. */
-#define USE_POSIX_THREADS_WEAK 1
+/* #undef USE_POSIX_THREADS_WEAK */
 
 /* Define if the GNU Pth multithreading library can be used. */
 /* #undef USE_PTH_THREADS */
@@ -2056,7 +2056,7 @@
 #endif
 
 /* Define to 1 to internationalize bison runtime messages. */
-#define YYENABLE_NLS 1
+/* #undef YYENABLE_NLS */
 
 /* Define to 1 if `lex' declares `yytext' as a `char *' by default, not a
    `char[]'. */
